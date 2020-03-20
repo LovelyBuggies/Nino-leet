@@ -19,7 +19,7 @@ Y   I   R
 **Output:** "PINALSIGYAHRPI"
 **Explanation:**
 
-P     I    N
+P     I     N
 A   L S  I G
 Y A   H R
 P     I

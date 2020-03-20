@@ -1,4 +1,4 @@
-# [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+# 3. Longest Substring Without Repeating Characters
 
 ## 问题
 
@@ -6,10 +6,10 @@
 
 **例子：**
 
-```
+```text
 Input: "abcabcbb"
 Output: 3 
-Explanation: The answer is "abc", with the length of 3. 
+Explanation: The answer is "abc", with the length of 3.
 ```
 
 ## 思路
@@ -22,16 +22,16 @@ Explanation: The answer is "abc", with the length of 3.
 
 ```python
 class Solution:
-    
+
     def lengthOfLongestSubstring(self, s: str) -> int:
-        
+
         count, substr = 0, ""
         for ch in s:
             if ch in substr:
                 substr = substr[substr.find(ch)+1:]
             substr += ch
             count = max(len(substr), count)
-        
-        return count   
+
+        return count
 ```
 

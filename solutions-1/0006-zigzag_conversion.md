@@ -1,10 +1,10 @@
-# [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+# 6. ZigZag Conversion
 
 ## 问题
 
 字符串`"PAYPALISHIRING"`在给定行数上以ZigZag形式书写，如下所示：
 
-```
+```text
 P   A   H    N
 A P L S I I G
 Y   I   R
@@ -14,7 +14,7 @@ Y   I   R
 
 **例子：**
 
-```markdown
+```text
 **Input:** s = "PAYPALISHIRING", numRows = 4
 **Output:** "PINALSIGYAHRPI"
 **Explanation:**
@@ -29,8 +29,7 @@ P     I
 
 这个题目其实是一个索引游戏，我们首先需要搞清楚原字符串中每个元素在ZigZag中的位置。
 
-```
-
+```text
 0                           2n-2                          4n-4
 1                     2n-3  2n-1                      ·   4n-3
 2                 ·         2n                   ·        4n-2
@@ -38,7 +37,6 @@ P     I
 .       n+1                 .           ·                  ·
 n-2 n                       3n-4  3n-2                    5n-4
 n-1                         3n-3                          5n-5
-
 ```
 
 我们采用的方法是生成n行字符串，添加元素，再进行连接。我们发现其实每`2n-2`个元素其实是一个循环（周期）。循环中字符分布成两种类型的坐标：一种是在'Z'的竖边上；另一种是在'Z'的斜边上。
@@ -49,12 +47,12 @@ n-1                         3n-3                          5n-5
 
 ```python
 class Solution:
-    
+
     def convert(self, s: str, numRows: int) -> str:
-        
+
         if numRows < 2:
             return s
-        
+
         rows = ["" for i in range(numRows)]
         for idx, ch in enumerate(s):
             period = 2 * numRows - 2
@@ -63,7 +61,7 @@ class Solution:
                 rows[mod] += ch
             else:
                 rows[period - mod] += ch
-        
-        return "".join(rows) 
+
+        return "".join(rows)
 ```
 

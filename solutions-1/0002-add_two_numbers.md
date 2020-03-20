@@ -1,4 +1,4 @@
-# [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+# 2. Add Two Numbers
 
 ## 问题
 
@@ -8,7 +8,7 @@
 
 **例子：**
 
-```
+```text
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
@@ -28,9 +28,9 @@ Explanation: 342 + 465 = 807.
 #         self.next = None
 
 class Solution:
-    
+
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        
+
         carry = 0
         root = node = ListNode(0)
         while l1 or l2 or carry:
@@ -43,7 +43,7 @@ class Solution:
                 l2 = l2.next
             carry, val = divmod(v1+v2+carry, 10)
             node.next = node = ListNode(val)
-            
+
         return root.next
 ```
 

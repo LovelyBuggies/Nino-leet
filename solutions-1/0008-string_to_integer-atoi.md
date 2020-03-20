@@ -1,4 +1,4 @@
-# [8. String to Integer (atoi)](https://leetcode.com/problems/reverse-integer/)
+# 8. String to Integer \(atoi\)
 
 ## 问题
 
@@ -14,12 +14,12 @@
 
 **注意:**
 
-- 只有空格字符`' '`被认为是空白字符。
-- 假设我们处理的环境只能存储32位带符号整数范围内的整数：[−2^31,2^31−1]。如果数值超出了可表示值的范围，则返回`INT_MAX=2^31−1`或`INT_MIN=−2^31`。
+* 只有空格字符`' '`被认为是空白字符。
+* 假设我们处理的环境只能存储32位带符号整数范围内的整数：\[−2^31,2^31−1\]。如果数值超出了可表示值的范围，则返回`INT_MAX=2^31−1`或`INT_MIN=−2^31`。
 
 **例子：**
 
-```markdown
+```text
 **Input:** "123"
 **Output:** 123
 
@@ -43,11 +43,11 @@
 import math, re
 
 class Solution:
-    
+
     def myAtoi(self, str: str) -> int:
-        
+
         numberStr = re.findall('^[\+\-]?0*\d+', str.strip())
-        
+
         if numberStr:
             num = int(numberStr[0])
             if num < -math.pow(2, 31):

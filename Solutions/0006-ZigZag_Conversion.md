@@ -5,7 +5,7 @@
 字符串`"PAYPALISHIRING"`在给定行数上以ZigZag形式书写，如下所示：
 
 ```
-P   A   H   N
+P   A   H    N
 A P L S I I G
 Y   I   R
 ```

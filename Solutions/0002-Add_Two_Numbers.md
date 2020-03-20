@@ -29,7 +29,7 @@ Explanation: 342 + 465 = 807.
 
 class Solution:
     
-    def addTwoNumbers(self, l1, l2):
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         
         carry = 0
         root = node = ListNode(0)

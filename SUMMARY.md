@@ -13,4 +13,5 @@
 * [8. String to Integer \(atoi\)](solutions-1/0008-string_to_integer-atoi.md)
 * [11. Container with Most Water](solutions-1/0011-container_with_most_water.md)
 * [12. Integretion to Roman](solutions-1/0012-integer_to_roman.md)
+* [13. Roman to Integer](solutions-1/0013-roman_to_integer.md)
 

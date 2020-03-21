@@ -7,14 +7,14 @@
 **例子：**
 
 ```text
-**Input:** 123
-**Output:** 321
+Input: 123
+Output: 321
 
-**Input:** -123
-**Output:** -321
+Input: -123
+Output: -321
 
-**Input:** 120
-**Output:** 21
+Input: 120
+Output: 21
 ```
 
 ## 思路

@@ -5,7 +5,7 @@
 罗马数字由七个不同的符号表示：`I`、 `V`、 `X`、 `L`、 `C`、 `D` 和 `M`。
 
 ```markdown
-**Symbol**       **Value**
+Symbol        Value
 I             1
 V             5
 X             10
@@ -28,20 +28,20 @@ M             1000
 **例子：**
 
 ```markdown
-**Input:** 3
-**Output:** "III"
+Input: 3
+Outpu "III"
 
-**Input:** 4
-**Output:** "IV"
+Input: 4
+Output: "IV"
 
-**Input:** 8
-**Output:** "IX"
+Input: 8
+Output: "IX"
 
-**Input:** 58
-**Output:** "LVIII"
+Input: 58
+Output: "LVIII"
 
-**Input:** 1994
-**Output:** "MCMXCIV"
+Input: 1994
+Output: "MCMXCIV"
 ```
 
 ## 思路

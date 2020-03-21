@@ -15,9 +15,9 @@ Y   I   R
 **例子：**
 
 ```text
-**Input:** s = "PAYPALISHIRING", numRows = 4
-**Output:** "PINALSIGYAHRPI"
-**Explanation:**
+Input: s = "PAYPALISHIRING", numRows = 4
+Output: "PINALSIGYAHRPI"
+Explanation:
 
 P     I     N
 A   L S  I G

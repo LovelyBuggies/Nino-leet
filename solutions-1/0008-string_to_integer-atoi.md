@@ -20,17 +20,17 @@
 **例子：**
 
 ```text
-**Input:** "123"
-**Output:** 123
+Input: "123"
+Output: 123
 
-**Input:** "-123"
-**Output:** -123
+Input: "-123"
+Output: -123
 
-**Input:** "123 with words"
-**Output:** 123
+Input: "123 with words"
+Output: 123
 
-**Input:** "words and 123"
-**Output:** 0
+Input: "words and 123"
+Output: 0
 ```
 
 ## 思路

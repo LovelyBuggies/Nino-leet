@@ -33,7 +33,26 @@ Output: true
 
 ## 思路
 
-一种直观的做法就是用栈的push和pop进行操作（或者用其他数据结构进行类似思路的操作）。但是其实有一种更简单的聪明做法 : -)，直接在字符串中remove掉pairs就好了。
+一种直观的做法就是用栈的push和pop进行操作（或者用其他数据结构进行类似思路的操作）。对于开括号，进行入栈；对于闭括号，如果栈非空且匹配栈顶，则顶栈元素出栈；否则直接返回不合法。当然这个只适用于没有其他字符的字符串，如果含有其他字符，增加判定条件即可。
+
+```python
+class Solution:
+    
+    def isValid(self, s: str) -> bool:
+        
+        d = {'(':')', '[':']', '{':'}'}
+        result = ''
+        for p in s:
+            if p in d.keys():
+                result += p
+            elif len(result) and {v:k for k, v in d.items()}[p] == result[-1]: # another elif: len(result) and [k for k, v in d.items() if v == p][0] == result[-1]
+                result = result[:-1]
+            else: return False
+                
+        return not len(result)
+```
+
+但是其实有一种更简单的聪明做法 : -)，直接在字符串中remove掉pairs就好了。
 
 ## 答案
 

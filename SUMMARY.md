@@ -18,4 +18,5 @@
 * [19. Remove Nth Node From End of List](solutions-1/0019-Remove_Nth_Node_From_End_of_List.md)
 * [20. Valid Parentheses](solutions-1/0020-Valid_Parentheses.md)
 * [21. Merge Two Sorted Lists](solutions-1/0021-Merge_Two_Sorted_Lists.md)
+* [22. Generate Parentheses](solutions-1/0022-Generate_Parentheses.md)
 

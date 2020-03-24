@@ -45,7 +45,8 @@ class Solution:
         for p in s:
             if p in d.keys():
                 result += p
-            elif len(result) and {v:k for k, v in d.items()}[p] == result[-1]: # another elif: len(result) and [k for k, v in d.items() if v == p][0] == result[-1]
+            elif len(result) and {v:k for k, v in d.items()}[p] == result[-1]: 
+            # alternative: [k for k, v in d.items() if v == p][0] == result[-1]
                 result = result[:-1]
             else: return False
                 

@@ -12,7 +12,7 @@
 Input: haystack = "hello", needle = "ll"
 Output: 2
 
-haystack = "aaaaa", needle = "bba"
+Input: haystack = "aaaaa", needle = "bba"
 Output: -1
 ```
 

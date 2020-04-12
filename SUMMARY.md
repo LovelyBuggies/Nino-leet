@@ -15,8 +15,9 @@
 * [12. Integretion to Roman](solutions-1/0012-integer_to_roman.md)
 * [13. Roman to Integer](solutions-1/0013-roman_to_integer.md)
 * [14. Longest Common Prefix](solutions-1/0014-longest_common_prefix.md)
-* [19. Remove Nth Node From End of List](solutions-1/0019-Remove_Nth_Node_From_End_of_List.md)
-* [20. Valid Parentheses](solutions-1/0020-Valid_Parentheses.md)
-* [21. Merge Two Sorted Lists](solutions-1/0021-Merge_Two_Sorted_Lists.md)
-* [22. Generate Parentheses](solutions-1/0022-Generate_Parentheses.md)
+* [19. Remove Nth Node From End of List](solutions-1/0019-remove_nth_node_from_end_of_list.md)
+* [20. Valid Parentheses](solutions-1/0020-valid_parentheses.md)
+* [21. Merge Two Sorted Lists](solutions-1/0021-merge_two_sorted_lists.md)
+* [22. Generate Parentheses](solutions-1/0022-generate_parentheses.md)
+* [24. Swap Nodes in Pairs](solutions-1/0024-swap_nodes_in_pairs.md)
 

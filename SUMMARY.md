@@ -21,4 +21,5 @@
 * [22. Generate Parentheses](solutions-1/0022-generate_parentheses.md)
 * [24. Swap Nodes in Pairs](solutions-1/0024-swap_nodes_in_pairs.md)
 * [28. Implement strstr()](solutions-1/0028-implement_strstr.md)
+* [29. Divide Two Integers](solutions-1/0029-divide_two_integers.md)
 

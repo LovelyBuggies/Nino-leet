@@ -8,7 +8,7 @@
 
 **例子：**
 
-```markdown
+```
 Input: haystack = "hello", needle = "ll"
 Output: 2
 

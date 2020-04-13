@@ -14,7 +14,7 @@ Y   I   R
 
 **例子：**
 
-```text
+```
 Input: s = "PAYPALISHIRING", numRows = 4
 Output: "PINALSIGYAHRPI"
 Explanation:

@@ -4,7 +4,7 @@
 
 罗马数字由七个不同的符号表示：`I`、 `V`、 `X`、 `L`、 `C`、 `D` 和 `M`。
 
-```markdown
+```
 Symbol        Value
 I             1
 V             5

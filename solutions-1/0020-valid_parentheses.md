@@ -14,7 +14,7 @@
 
 **例子：**
 
-```markdown
+```
 Input: "()"
 Output: true
 

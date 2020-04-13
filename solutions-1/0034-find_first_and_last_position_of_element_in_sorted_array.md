@@ -25,30 +25,40 @@ l, r = bisect.bisect_left(nums, target), bisect.bisect_right(nums, target) - 1
 return [l, r] if l <= r else [-1,-1]
 ```
 
-让我们看看是怎么实现这个轮子的：
-
+实现这个轮子其实还是挺烧脑的。精髓在于即使第一次找到了 `target`，也不扔到 `res` 里，而是保持耐心，直到找到最左/右的 `target` 的位置。
 
 
 ## 答案
 
-```python
-import numpy as np
+[The implementation of `bisect_*`.](https://github.com/python/cpython/blob/3.8/Lib/bisect.py)
 
+```python
 class Solution:
     
-    def search(self, nums, target):
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
         
-        if not len(nums):   return -1
+        res = []
         
-        high = np.argmax(nums)
-        low = high - len(nums) + 1
+        # bisect left
+        low, high = 0, len(nums)
+        while low < high:
+            
+            mid = (low + high) // 2
+            if target > nums[mid]:
+                low = mid + 1
+            else: high = mid
+        res.append(low)
         
-        while low <= high:
-            mid = (low+high) // 2
-            if target < nums[mid]:   high = mid - 1
-            elif target > nums[mid]: low = mid + 1
-            else: return mid + len(nums) if mid < 0 else mid
-
-        return -1
+        # bisect right - 1
+        low, high = 0, len(nums)
+        while low < high:
+            
+            mid = (low + high) // 2
+            if target < nums[mid]:
+                high = mid
+            else: low = mid + 1
+        res.append(low - 1)
+        
+        return res if res[0] <= res[1] else [-1, -1]
 ```
 

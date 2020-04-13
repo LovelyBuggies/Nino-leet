@@ -2,7 +2,7 @@
 
 ## 问题
 
-实现 `strStr()` 方法（C 库函数）。
+实现 `strstr()` 方法（C 库函数）。
 
 返回 `haystack` 中第一次出现 `needle` 的索引，如果 `needle` 不是 `haystack` 的一部分，则返回  **-1**。
 

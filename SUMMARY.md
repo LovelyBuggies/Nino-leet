@@ -25,4 +25,5 @@
 * [33. Search in Rotated Sorted Array](solutions-1/0033-search_in_rotated_sorted_array.md)
 * [34. Find First and Last Position of Element in Sorted Array](solutions-1/0034-find_first_and_last_position_of_element_in_sorted_array.md)
 * [35. Search Insert Position](solutions-1/0035-search_insert_position.md)
+* [41. First Missing Positive](solutions-1/0041-first_missing_positive.md)
 

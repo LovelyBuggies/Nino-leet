@@ -33,4 +33,5 @@
 * [49. Group Anagrams](solutions-1/0049-group_anagrams.md)
 * [50. Pow(x, n)](solutions-1/0050-powx_n.md)
 * [58. Length of Last Word](solutions-1/0058-length_of_last_word.md)
+* [60. Length of Last Word](solutions-1/0060-permutation-sequence.md)
 

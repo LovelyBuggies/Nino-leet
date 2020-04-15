@@ -29,4 +29,5 @@
 * [42. Trapping Rain Water](solutions-1/0042-trapping-rain-water.md)
 * [46. Permutations](solutions-1/0046-permutations.md)
 * [47. Permutations II](solutions-1/0047-permutations_ii.md)
+* [48. Rotate Image](solutions-1/0048-rotate_image.md)
 

@@ -46,6 +46,6 @@ class Solution:
         
         return ''.join([str(i) for i in list(p[k-1])])
         
-        # oneline solution
+        # one-line solution
         # return ''.join([str(i) for i in list(list(itertools.permutations([i for i in range(1, n+1)]))[k-1])])
 ```

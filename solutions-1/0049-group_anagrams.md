@@ -23,7 +23,7 @@ Output:
 
 ## 思路
 
-这个题目其实就是对含有相同字母的单词进行分组。用字典可以轻松实现，只不过字典的 key 实际上是一个由含有字母组成的元祖。
+这个题目其实就是对含有相同字母的单词进行分组。用字典可以轻松实现，只不过字典的 key 实际上是一个由含有字母组成的元组。
 
 
 ## 答案
@@ -35,8 +35,8 @@ class Solution:
         
         d = {}
         for w in strs:
-            chs = tuple(sorted(w))
-            d[chs] = d.get(chs, []) + [w]
+            key = tuple(sorted(w))
+            d[key] = d.get(key, []) + [w]
         # d = {('a', 'e', 't'): ['eat', 'tea', 'ate'], ('a', 'n', 't'): ['tan', 'nat'], ('a', 'b', 't'): ['bat']}
         
         return sorted(d.values())

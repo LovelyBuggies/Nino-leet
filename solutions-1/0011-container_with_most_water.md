@@ -19,7 +19,7 @@ Output: 49
 
 ## 思路
 
-这个题目有一个很直观的O(n^2)解法，两层循环，分别找左右两边，然后找water的最大值，如下所示：
+这个题目有一个很直观的 O(n^2) 解法，两层循环，分别找左右两边，然后找 `level` 的最大值，如下所示：
 
 ```python
 class Solution:
@@ -34,7 +34,7 @@ class Solution:
         return contain
 ```
 
-这个代码虽然比较clean，甚至可以两行就解决，但是但是这个题的有趣之处在于，LeetCode OJ不允许O(n^2)解决，会出现"Time Limit Exceeded"。这迫使我们寻找O(n)的方案。
+这个代码虽然比较 clean，甚至可以两行就解决，但是但是这个题的有趣之处在于，LeetCode OJ 不允许 O(n^2) 解决，会出现  "Time Limit Exceeded"。这迫使我们寻 O(n) 的方案。
 
 新算法的核心思路就是：
 
@@ -52,13 +52,13 @@ class Solution:
     def maxArea(self, height: List[int]) -> int:
         
         l, r = 0, len(height) - 1
-        water = 0
+        level = 0
         while l < r:
-            water = max(water, (r - l) * min(height[l], height[r]))
+            level = max(level, (r - l) * min(height[l], height[r]))
             if height[l] < height[r]:
                 l += 1
             else:
                 r -= 1
-        return water
+        return level
 ```
 

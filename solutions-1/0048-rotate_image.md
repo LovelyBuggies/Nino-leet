@@ -1,4 +1,4 @@
-# [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
+# [46. Permutations II](https://leetcode.com/problems/rotate-image/)
 
 ## 问题
 

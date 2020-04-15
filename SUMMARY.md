@@ -27,4 +27,6 @@
 * [35. Search Insert Position](solutions-1/0035-search_insert_position.md)
 * [41. First Missing Positive](solutions-1/0041-first_missing_positive.md)
 * [42. Trapping Rain Water](solutions-1/0042-trapping-rain-water.md)
+* [46. Permutations](solutions-1/0046-permutations.md)
+* [47. Permutations II](solutions-1/0047-permutations_ii.md)
 

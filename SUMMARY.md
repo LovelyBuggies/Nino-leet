@@ -31,5 +31,5 @@
 * [47. Permutations II](solutions-1/0047-permutations_ii.md)
 * [48. Rotate Image](solutions-1/0048-rotate_image.md)
 * [49. Group Anagrams](solutions-1/0049-group_anagrams.md)
-* [50. Pow(x, n)](solutions-1/0049-group_anagrams.md)
+* [50. Pow(x, n)](solutions-1/0050-powx_n.md)
 

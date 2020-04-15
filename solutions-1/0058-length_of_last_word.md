@@ -19,7 +19,7 @@ Output: 5
 
 ## 思路
 
-这个题就比较无聊，没有说我们需要 focus 的点，递归迭代都可以。
+我们可以用 Pythonic solution 来解决，值得注意的是，从右往左遍历可以略微减少一些运行时间。
 
 
 ## 答案
@@ -27,7 +27,7 @@ Output: 5
 ```python
 class Solution:
     
-    def myPow(self, x: float, n: int) -> float:
+    def lengthOfLastWord(self, s: str) -> int:
         
-        return pow(x, n)
+        return len(s.rstrip().rsplit(' ')[-1])
 ```

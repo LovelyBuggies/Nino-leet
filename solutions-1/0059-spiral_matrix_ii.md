@@ -1,8 +1,8 @@
-# [54. Sprial Matrix](https://leetcode.com/problems/spiral-matrix/)
+# [59. Sprial Matrix II](https://leetcode.com/problems/spiral-matrix/)
 
 ## 问题
 
-给定一个 m \* n 的矩阵，以螺旋的顺序返回所有元素。
+给定一个正整数 n，以螺旋的顺序构建一个矩阵。
 
 **例子：**
 

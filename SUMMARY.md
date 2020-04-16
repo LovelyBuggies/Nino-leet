@@ -37,4 +37,5 @@
 * [58. Length of Last Word](solutions-1/0058-length_of_last_word.md)
 * [59. Sprial Matrix II](solutions-1/0059-spiral_matrix_ii.md)
 * [60. Permutation Sequence](solutions-1/0060-permutation-sequence.md)
+* [69. Sqrt(x)](solutions-1/0069-sqrtx.md)
 

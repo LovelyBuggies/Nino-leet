@@ -29,5 +29,6 @@ class Solution:
         
         for idx in range(len(nums) - 1):
             if nums[idx] > 0:  nums[idx + 1] += nums[idx]
+              
         return max(nums)
 ```

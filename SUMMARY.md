@@ -35,5 +35,5 @@
 * [53. Maximum Subarray](solutions-1/0053-maximum_subarray.md)
 * [54. Sprial Matrix](solutions-1/0054-spiral_matrix.md)
 * [58. Length of Last Word](solutions-1/0058-length_of_last_word.md)
-* [60. Length of Last Word](solutions-1/0060-permutation-sequence.md)
+* [60. Permutation Sequence](solutions-1/0060-permutation-sequence.md)
 

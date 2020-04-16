@@ -25,20 +25,20 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
   - 小于下一个区间的起点：直接不用合并。
   - 大于下一个区间的起点，小于下一个区间的终点：取下一个区间的终点。
   - 大于下一个区间的终点：取这个区间的终点。
+- 为了避免索引错位，`intervals[idx]` "蜡炬成灰泪始干"，变成了 `[]`；而 `intervals[idx+1]` "病树前头万木春"，变成了新的大区间。
+- 最后，我们"剥茧抽丝"，把非空区间取出来返回就好了。
 
 ## 答案
 
 ```python
 class Solution:
     
-    def canJump(self, nums: List[int]) -> bool:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         
-        reach = 0
-        for idx, num in enumerate(nums[:-1]):
-            # the farthest reach
-            reach = max(reach, idx + num)
-            # if walk outreach the reach scope, return false
-            if not idx < reach: return False
+        intervals = sorted(intervals)
+        for idx in range(len(intervals) - 1):
+            if intervals[idx][1] >= intervals[idx+1][0]: intervals[idx], intervals[idx+1] = [], [intervals[idx][0], max(intervals[idx+1][1], intervals[idx][1])]
+        while [] in intervals: intervals.remove([])
             
-        return True
+        return intervals
 ```

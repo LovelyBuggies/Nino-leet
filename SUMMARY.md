@@ -34,6 +34,7 @@
 * [50. Pow(x, n)](solutions-1/0050-powx_n.md)
 * [53. Maximum Subarray](solutions-1/0053-maximum_subarray.md)
 * [54. Sprial Matrix](solutions-1/0054-spiral_matrix.md)
+* [55. Jump Game](solutions-1/0055-jump_game.md)
 * [58. Length of Last Word](solutions-1/0058-length_of_last_word.md)
 * [59. Sprial Matrix II](solutions-1/0059-spiral_matrix_ii.md)
 * [60. Permutation Sequence](solutions-1/0060-permutation-sequence.md)

@@ -47,7 +47,7 @@ class Solution:
         return res
 ```
 
-一个比较 Pythonic 的方法是用 `eval()` 或者是 `bin` 函数。
+一个比较 Pythonic 的方法是用 `eval()` 或者是 `bin()` 函数。
 
 ```python 
 class Solution:

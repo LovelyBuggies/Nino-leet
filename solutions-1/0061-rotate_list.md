@@ -42,7 +42,7 @@ rotate 4 steps to the right: 2->0->1->NULL
 - 如果 `k` 超过了 `L` 的长度，则折返回来找新的头节点。
 - 如果右移正好使头新的节点回到原处，那么当作不需要右移处理。
 
-这样我们就能写出如下代码：
+通过循环法，我们可以用两个指针、不需要提前遍历一遍知道链表的长度就可以 one-pass 找到头节点（思路 1）。这样我们就能写出如下代码：
 
 ```python
 class Solution:
@@ -77,7 +77,7 @@ class Solution:
 
 ### 取模法
 
-取模法和循环法在思路上都是一样的，只不过实现手段有些差异。差异主要体现在第一步找新的头节点上，因为大值 `k` 在这一步拉开了差距。
+取模法和循环法在思路上都是一样的，只不过实现手段有些差异。差异主要体现在第一步找新的头节点上。我们先遍历得知链表长度，再根据模的值进行右移。当然，知道了链表多长之后就没必要用两个指针找头节点了。取模法虽然不能通过 one-pass 实现新的头节点查找（思路 1），但当 `k ` 很大的时候，the second pass 用模找头的计算量基本可以忽略。
 
 取模法基于的以下假设：
 
@@ -119,20 +119,17 @@ class Solution:
             count += 1
             node = node.next
         
-        k %= count
+        k = count - k % count
         
-        if not k: return head
+        if not k - count: return head
         
-        slow = fast = head
-        while k > 0:
-            fast = fast.next
+        node = head
+        while k > 1:
+            node = node.next
             k -= 1
+            
+        node.next, head, tmp = None, node.next if node.next else head, head 
         
-        while fast.next:
-            if not slow.next: return head
-            slow, fast = slow.next, fast.next
-        
-        slow.next, head, tmp = None, slow.next if slow.next else head, head 
         node = head
         while node.next: node = node.next
         node.next = tmp

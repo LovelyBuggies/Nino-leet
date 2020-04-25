@@ -2,7 +2,5 @@
 
 A leetcode a day, happy coding quickly \( ̀⌄ ́ \)!
 
-不求最快，内存不管，只求最短 \(◐‿◑\)
-
-更新中 … … 如有更短，欢迎PR！
+N!no 的 Leet Code 手记。
 

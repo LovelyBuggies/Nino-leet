@@ -2,5 +2,5 @@
 
 A leetcode a day, happy coding quickly \( ̀⌄ ́ \)!
 
-N!no 的 Leet Code 手记。
+NÏno の Leet Code 手記。
 

@@ -40,6 +40,7 @@
 * [58. Length of Last Word](solutions-1/0058-length_of_last_word.md)
 * [59. Sprial Matrix II](solutions-1/0059-spiral_matrix_ii.md)
 * [60. Permutation Sequence](solutions-1/0060-permutation-sequence.md)
+* [65. Valid Number](solutions-1/0065-valid_number.md)
 * [61. Rotate List](solutions-1/0061-rotate_list.md)
 * [66. Plus One](solutions-1/0066-plus_one.md)
 * [67. Add Binary](solutions-1/0067-add_binary.md)

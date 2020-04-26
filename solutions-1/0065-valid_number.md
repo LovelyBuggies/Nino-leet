@@ -51,7 +51,7 @@ class Solution:
         return True if re.match(reg, s.strip()) else False
 ```
 
-或者 crazy (unreadable) one-line solution：
+OR crazy (unreadable) one-line solution. :D
 
 ```python
 class Solution:

@@ -1,25 +1,20 @@
-# [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)
+# [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
 
 ## 问题
 
-假设一个按升序排序的数组在某个未知的主元处旋转，比如 `[0,1,2,4,5,6,7]` 可能会变成 `[4,5,6,7,0,1,2]`。
+给定一个链表，删除其中所有**重复过**的元素，保证只有**曾经**独一无二的元素留在原链表中。
 
-在一个数组中，找到一个目标值：如果找到，返回 `true`；否则，返回 `false`。
+返回结果依然保持有序状态。
 
 **例子：**
 
 ```
-Input: nums = [2,5,6,0,0,1,2], target = 0
-Output: true
+Input: 1->2->3->3->4->4->5
+Output: 1->2->5
 
-Input: nums = [2,5,6,0,0,1,2], target = 3
-Output: false
+Input: 1->1->1->2->3
+Output: 2->3
 ```
-
-**跟进：**
-
-- 这是第 33 题的跟进题目，这个题目中的数组可能包含重复元素。
-- 这个会影响时间复杂度么？怎样影响？为什么会影响？
 
 ## 思路
 
@@ -31,8 +26,6 @@ else:   return nums.index(target)
 ```
 
 同第 33 题一样，我们可以用一种类似于二分查找的方法，分别确定最大最小元素的 index 就可以当成一个真正的有序数列来处理了。
-
-我们采用的二分查找法在这两个题目中没有时间复杂度的区别。 
 
 ## 答案
 

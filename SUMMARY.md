@@ -47,5 +47,6 @@
 * [69. Sqrt(x)](solutions-1/0069-sqrtx.md)
 * [70. Climbing Stairs](solutions-1/0070-climbing_stairs.md)
 * [71. Simplify Path](solutions-1/0071-simplify_path.md)
+* [73. Set Matrix Zeroes](solutions-1/0073-set_matrix_zeroes.md)
 * [509. Fibonacci Number](solutions-1/0509-fibonacci_number.md)
 * [1137. N-th Tribonacci Number](solutions-1/1137-n_th_tribonacci_number.md)

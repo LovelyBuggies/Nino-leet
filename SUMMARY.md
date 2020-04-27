@@ -54,6 +54,7 @@
 * [77. Combinations](solutions-1/0077-combinations.md)
 * [78. Subsets](solutions-1/0078-subsets.md)
 * [80. Remove Duplicates from Sorted Array II](solutions-1/0080-remove_duplicates_from_sorted_array_ii.md)
+* [81. Search in Rotated Sorted Array II](solutions-1/0081-search_in_rotated_sorted_array_ii.md)
 * [90. Subsets II](solutions-1/0090-subsets_ii.md)
 * [509. Fibonacci Number](solutions-1/0509-fibonacci_number.md)
 * [1137. N-th Tribonacci Number](solutions-1/1137-n_th_tribonacci_number.md)

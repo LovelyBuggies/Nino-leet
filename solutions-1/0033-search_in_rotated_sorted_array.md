@@ -32,22 +32,26 @@ else:   return nums.index(target)
 ## 答案
 
 ```python
-import numpy as np
-
 class Solution:
     
     def search(self, nums, target):
         
         if not len(nums):   return -1
         
-        high = np.argmax(nums)
-        low = high - len(nums) + 1
+        idx, l = 0, len(nums)
+        
+        while idx < l - 1:
+            if nums[idx+1] < nums[idx]: break 
+            else: idx += 1
+        
+        high = idx
+        low = high - l + 1
         
         while low <= high:
             mid = (low + high) // 2
             if target < nums[mid]:   high = mid - 1
             elif target > nums[mid]: low = mid + 1
-            else: return mid + len(nums) if mid < 0 else mid
+            else: return mid + l if mid < 0 else mid
 
         return -1
 ```

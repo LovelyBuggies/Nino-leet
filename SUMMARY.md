@@ -20,6 +20,7 @@
 * [21. Merge Two Sorted Lists](solutions-1/0021-merge_two_sorted_lists.md)
 * [22. Generate Parentheses](solutions-1/0022-generate_parentheses.md)
 * [24. Swap Nodes in Pairs](solutions-1/0024-swap_nodes_in_pairs.md)
+* [26. Remove Duplicates from Sorted Array](solutions-1/0026-remove_duplicates_from_sorted_array.md)
 * [28. Implement strstr()](solutions-1/0028-implement_strstr.md)
 * [29. Divide Two Integers](solutions-1/0029-divide_two_integers.md)
 * [33. Search in Rotated Sorted Array](solutions-1/0033-search_in_rotated_sorted_array.md)

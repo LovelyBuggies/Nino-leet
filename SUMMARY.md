@@ -48,5 +48,8 @@
 * [70. Climbing Stairs](solutions-1/0070-climbing_stairs.md)
 * [71. Simplify Path](solutions-1/0071-simplify_path.md)
 * [73. Set Matrix Zeroes](solutions-1/0073-set_matrix_zeroes.md)
+* [74. Search a 2D Matrix](solutions-1/0074-search_a_2d_matrix.md)
+* [75. Sort Colors](solutions-1/0075-sort_colors.md)
+* [77. Combinations](solutions-1/0077-combinations.md)
 * [509. Fibonacci Number](solutions-1/0509-fibonacci_number.md)
 * [1137. N-th Tribonacci Number](solutions-1/1137-n_th_tribonacci_number.md)

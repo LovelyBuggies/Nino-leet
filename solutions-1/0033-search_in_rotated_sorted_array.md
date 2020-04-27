@@ -27,7 +27,7 @@ else:   return nums.index(target)
 
 尽管这个方法十分简单，但它的时间复杂度是 O(n) （[Python Built-in Complexity](https://wiki.python.org/moin/TimeComplexity)），但要求的算法时间复杂度是 O(log n)。当然，在后面的练习 34 中，你可以看到也可以用 bisect 轮子实现，但是这里我们主要探讨的还是环式二分查找的方法。
 
-考虑到这点，我们可以用一种类似于二分查找的方法，分别确定最大最小元素的 index 就可以当成一个真正的有序数列来处理了。*题外话：其实新方法的运行时间并不比 `index()` 方法小，但是毕竟时间复杂度不是真正意义上的运行时间。* :)
+考虑到这点，我们可以用一种类似于二分查找的方法，分别确定最大最小元素的 index 就可以当成一个真正的有序数列来处理了。这个回答目前暂时基本战胜了所有的其他回答 :)
 
 ## 答案
 
@@ -38,15 +38,14 @@ class Solution:
         
         if not len(nums):   return -1
         
-        idx, l = 0, len(nums)
+        # 找到最大和最小元素
+        high, l = 0, len(nums)
+        while high < l - 1:
+            if nums[high+1] < nums[high]: break 
+            else: high += 1
         
-        while idx < l - 1:
-            if nums[idx+1] < nums[idx]: break 
-            else: idx += 1
-        
-        high = idx
+        # 二分查找
         low = high - l + 1
-        
         while low <= high:
             mid = (low + high) // 2
             if target < nums[mid]:   high = mid - 1
@@ -55,4 +54,3 @@ class Solution:
 
         return -1
 ```
-

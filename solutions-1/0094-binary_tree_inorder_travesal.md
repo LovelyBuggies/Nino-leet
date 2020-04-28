@@ -21,19 +21,32 @@ Output: [1,3,2]
 
 ## 思路
 
-
+递归确实挺简单的，就不再赘述了。
 
 ## 答案
 
 ```python
-import itertools
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
 
 class Solution:
     
-    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+    # 递归法
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
         
-        res, nums = [], sorted(nums)
-        for k in range(len(nums) + 1): res += itertools.combinations(nums, k)
-            
-        return list(set(res))
+        def helper(root, res):
+        
+            if not root: return res
+            helper(root.left, res)
+            res.append(root.val)
+            helper(root.right, res)
+            return res
+        
+        res = helper(root, [])
+        
+        return res
 ```

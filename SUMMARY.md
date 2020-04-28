@@ -61,6 +61,8 @@
 * [83. Remove Duplicates from Sorted List](solutions-1/0083-remove_duplicates_from_sorted_list.md)
 * [88. Merge Sorted Array](solutions-1/0088-merge_sorted_array.md)
 * [90. Subsets II](solutions-1/0090-subsets_ii.md)
+* [96. Unique Binary Search Trees](solutions-1/0096-unique_binary_search_trees.md)
+* [98. Validate Binary Search Tree](solutions-1/0098-validate_binary_search_tree.md)
 * [203. Remove Linked List Elements](solutions-1/0203-remove_linked_list_elements.md)
 * [283. Move Zeros](solutions-1/0283-move_zeroes.md)
 * [509. Fibonacci Number](solutions-1/0509-fibonacci_number.md)

@@ -70,4 +70,6 @@
 * [283. Move Zeros](solutions-1/0283-move_zeroes.md)
 * [501. Find Mode in Binary Search Tree](solutions-1/0501-find_mode_in_binary_search_tree.md)
 * [509. Fibonacci Number](solutions-1/0509-fibonacci_number.md)
+* [530. Minimum Absolute Difference in BST](solutions-1/0530-minimum_absolute_difference_in_bst.md)
+* [783. Minimum Distance Between BST Nodes](solutions-1/0783-minimum_distance_between_bst_nodes.md)
 * [1137. N-th Tribonacci Number](solutions-1/1137-n_th_tribonacci_number.md)

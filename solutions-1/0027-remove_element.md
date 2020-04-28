@@ -33,35 +33,33 @@ It doesn't matter what values are set beyond the returned length.
 
 ## 思路
 
-当然一个很直观的做法就是用集合工具。但是需要注意，集合是无序的，所以原本的顺序被打乱了，我们还得重新排序，这耽误了不少运行时间。
+一种很简单的办法就是判断元素是否还在数组中，如果在的话就移除。
 
 ```python
 class Solution:
     
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeElement(self, nums: List[int], val: int) -> int:
         
-        nums[:] = sorted(list(set(nums)))
-        
+        while val in nums: nums.remove(val)
+            
         return len(nums)
 ```
 
-于是，我们可以用这个思想。首先，用两个指针计算一个数字出现了几次，当然这个题目需要"保证"出现最多一次，所以可以用一个索引就好了，因为快慢指针间隔恒为 1。然后，对于第二个重复元素，直接 remove。需要小心的是，这时候数组长度变短了，如果还按照以前的长度进行遍历，索引会越界，所以干脆维护一个数组即时长度变量并用 while 决定循环好了。
+但是这样我们要每次循环都 `in` 一下，其实时间复杂度是 O(n^2) 的。所以我们用一个变量 `l` 动态记录数列长度。
 
 ## 答案
 
 ```python
 class Solution:
     
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeElement(self, nums: List[int], val: int) -> int:
         
         idx, l = 0, len(nums)
-        while idx < l - 1:
-            if nums[idx+1] == nums[idx]: 
-                nums.remove(nums[idx+1])
+        while idx < l:
+            if nums[idx] == val: 
+                nums.remove(val)
                 l -= 1
-            else: idx += 1  
+            else: idx += 1
         
         return len(nums)
 ```
-
-*然鹅，这个方法运行速度还不如 set 法呢 :<*

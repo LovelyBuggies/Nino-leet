@@ -2,70 +2,37 @@
 
 ## 问题
 
+给定一个 `n` 个元素的数组，找到其中的主要元素。主要元素是指出现超过过 `[n/2]` 次的元素。
 
+你可以假定数组非空，并且有一个主要元素存在。
 
 **例子：**
 
 ```
-Input
-["MinStack","push","push","push","getMin","pop","top","getMin"]
-[[],[-2],[0],[-3],[],[],[],[]]
+Input: [3,2,3]
+Output: 3
 
-Output
-[null,null,null,null,-3,null,0,-2]
-
-Explanation
-MinStack minStack = new MinStack();
-minStack.push(-2);
-minStack.push(0);
-minStack.push(-3);
-minStack.getMin(); // return -3
-minStack.pop();
-minStack.top();    // return 0
-minStack.getMin(); // return -2
+Input: [2,2,1,1,1,2,2]
+Output: 2
 ```
 
 ## 思路
 
-这个题目比较简单，不多赘述了。
+设置一个字典存储元素出现的次数，剩下的就无需赘言了。
 
 ## 答案
 
 ```python
-class MinStack:
-
-    def __init__(self):
-        """
-        initialize your data structure here.
-        """
-        
-        self.stack = []
-
-        
-    def push(self, x: int) -> None:
-        
-        self.stack.append(x)
-
-        
-    def pop(self) -> None:
-        
-        self.stack.pop()
-
-        
-    def top(self) -> int:
-        
-        return self.stack[-1]
+class Solution:
     
-
-    def getMin(self) -> int:
+    def majorityElement(self, nums: List[int]) -> int:
         
-        return min(self.stack)
-
-
-# Your MinStack object will be instantiated and called as such:
-# obj = MinStack()
-# obj.push(x)
-# obj.pop()
-# param_3 = obj.top()
-# param_4 = obj.getMin()
+        d, l = {}, 0
+        for num in nums:
+            l += 1
+            if str(num) in d: d[str(num)] += 1
+            else: d[str(num)] = 1
+        
+        for idx, val in d.items():
+            if val > l / 2: return idx
 ```

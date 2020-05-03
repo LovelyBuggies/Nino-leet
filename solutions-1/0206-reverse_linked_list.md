@@ -13,11 +13,17 @@ Output: 5->4->3->2->1->NULL
 
 ## 思路
 
+迭代法和递归法的基本思路都是反转每个 next 指向关系，实现起来也比较类似。Talk is cheap, let's see code！
+
 ### 递归法
 
-### 迭代法
+首先定一个递归函数。输入参数包含其之前的节点 `prev` 和当前节点 `curr`，每次递归中：
 
-迭代法的基本思路是反转每个 next 指向关系。Talk is cheap, let's see code！
+- 首先记录下一个节点 `tmp = curr.next`。
+- 然后改变指向关系 `curr.next = prev`。
+- 将保存节点  `curr` 和 `tmp` 分别作为下层递归的 `prev` 和 `curr `传入。
+
+### 迭代法
 
 在头节点存在的情况下，每次循环 `while head`：
 
@@ -39,6 +45,17 @@ Output: 5->4->3->2->1->NULL
 
 class Solution:
     
+    # 递归法
+    def reverseList(self, head: ListNode) -> ListNode:
+        
+        def helper(prev, curr):
+            
+            if not curr: return prev
+            tmp = curr.next
+            curr.next = prev
+            
+            return helper(curr, tmp)
+          
     # 迭代法
     def reverseList(self, head: ListNode) -> ListNode:
         

@@ -16,7 +16,7 @@ Output: tail connects to node index 1
 Explanation: There is a cycle in the linked list, where tail connects to the second node.
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
 
 
 
@@ -26,7 +26,7 @@ Output: tail connects to node index 0
 Explanation: There is a cycle in the linked list, where tail connects to the first node.
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
 
 
 
@@ -36,7 +36,7 @@ Output: no cycle
 Explanation: There is no cycle in the linked list
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
 
 
 
@@ -46,7 +46,7 @@ Explanation: There is no cycle in the linked list
 
 ## 思路
 
-![image](https://assets.leetcode.com/users/lovelybuggies/image_1588299577.png)
+![](https://assets.leetcode.com/users/lovelybuggies/image_1588299577.png)
 
 这个问题中，我们使用三个指针，`slow` 和`fast` 用来**找到链表快慢指针在环中相遇的地方**；`slow` 和`node` 用来**找到链表中环开始的地方**。
 

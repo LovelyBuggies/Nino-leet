@@ -14,7 +14,7 @@ Output: true
 Explanation: There is a cycle in the linked list, where tail connects to the second node.
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png)
 
 
 
@@ -24,7 +24,7 @@ Output: true
 Explanation: There is a cycle in the linked list, where tail connects to the first node.
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png)
 
 
 
@@ -34,7 +34,7 @@ Output: false
 Explanation: There is no cycle in the linked list.
 ```
 
-![img](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
+![](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
 
 
 

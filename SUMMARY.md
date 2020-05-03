@@ -61,7 +61,7 @@
 * [83. Remove Duplicates from Sorted List](solutions-1/0083-remove_duplicates_from_sorted_list.md)
 * [88. Merge Sorted Array](solutions-1/0088-merge_sorted_array.md)
 * [90. Subsets II](solutions-1/0090-subsets_ii.md)
-* [92. Reverse Linked List II](solutions-1/0206-reverse_linked_list_ii.md)
+* [92. Reverse Linked List II](solutions-1/0092-reverse_linked_list_ii.md)
 * [94. Binary Tree Inorder Traversal](solutions-1/0094-binary_tree_inorder_travesal.md)
 * [96. Unique Binary Search Trees](solutions-1/0096-unique_binary_search_trees.md)
 * [98. Validate Binary Search Tree](solutions-1/0098-validate_binary_search_tree.md)

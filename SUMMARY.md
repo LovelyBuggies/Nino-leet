@@ -68,6 +68,8 @@
 * [99. Recover Binary Search Tree](solutions-1/0099-recover_binary_search_tree.md)
 * [100. Same Tree](solutions-1/0100-same_tree.md)
 * [101. Symmetric Tree](solutions-1/0101-symmetric_tree.md)
+* [141. Linked List Cycle](0141-linked_list_cycle.md)
+* [142. Linked List Cycle II](0142-linked_list_cycle_ii.md)
 * [144. Binary Tree Preorder Traversal](solutions-1/0144-binary_tree_preorder_travesal.md)
 * [145. Binary Tree Postorder Traversal](solutions-1/0145-binary_tree_postorder_travesal.md)
 * [155. Min Stack](solutions-1/0155-min_stack.md)

@@ -28,9 +28,9 @@ Output: [1,2,3]
 ```python
 class Solution:
     
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
         
-        return [root.val] + self.inorderTraversal(root.left) + self.inorderTraversal(root.right) if root else []
+        return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right) if root else []
 ```
 
 ### 迭代法

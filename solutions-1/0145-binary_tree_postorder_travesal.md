@@ -28,14 +28,14 @@ Output: [3,2,1]
 ```python
 class Solution:
     
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
         
-        return [root.val] + self.inorderTraversal(root.left) + self.inorderTraversal(root.right) if root else []
+        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val] if root else []
 ```
 
 ### 迭代法
 
-迭代法的基本思路就是：如果当前节点存在，就存储它的 value 添加到返回值中，并将其存在栈中，然后左寻用其左节点替代当前节点；如果当前节点不存在，则用栈顶节点替代当前的节点，并用其右节点迭代这个节点。
+这个题目和其姐妹问题的区别在于，纯迭代有点麻烦。但是后序遍历有个重要的性质，就是：如果我们在先序中先遍历右子树，那么将会得到后序遍历的反数组。我们利用这个性质，就变得和第 144 题很相似。
 
 ## 答案
 
@@ -50,14 +50,14 @@ class Solution:
 class Solution:
     
     # 递归法
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
         
         def helper(root, res):
         
             if not root: return res
-            res.append(root.val)
             helper(root.left, res)
             helper(root.right, res)
+            res.append(root.val)
             return res
         
         res = helper(root, [])
@@ -66,17 +66,17 @@ class Solution:
     
     
     # 迭代法
-    def preorderTraversal(self, root: TreeNode) -> List[int]:
+    def postorderTraversal(self, root: TreeNode) -> List[int]:
         
         stack, res = [], []
         while root or stack:
             if root:
                 res.append(root.val)
                 stack.append(root)
-                root = root.left
+                root = root.right
             else:
                 root = stack.pop()
-                root = root.right
+                root = root.left
             
-        return res
+        return res[::-1]
 ```

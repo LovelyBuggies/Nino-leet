@@ -70,6 +70,7 @@
 * [101. Symmetric Tree](solutions-1/0101-symmetric_tree.md)
 * [144. Binary Tree Preorder Traversal](solutions-1/0144-binary_tree_preorder_travesal.md)
 * [145. Binary Tree Postorder Traversal](solutions-1/0145-binary_tree_postorder_travesal.md)
+* [155. Min Stack](solutions-1/0155-min_stack.md)
 * [203. Remove Linked List Elements](solutions-1/0203-remove_linked_list_elements.md)
 * [206. Reverse Linked List](solutions-1/0206-reverse_linked_list.md)
 * [283. Move Zeros](solutions-1/0283-move_zeroes.md)

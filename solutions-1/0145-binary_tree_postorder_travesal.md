@@ -1,8 +1,8 @@
-# [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+# [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
 
 ## 问题
 
-给定一个二叉树，返回中序遍历的结果。*这个题目是第 144 题和第 145 题的姐妹问题。*
+给定一个二叉树，返回后序遍历的结果。*这个题目是第 94 题和第 144 题的姐妹问题。*
 
 **例子：**
 
@@ -14,7 +14,7 @@ Input: [1,null,2,3]
     /
    3
 
-Output: [1,3,2]
+Output: [3,2,1]
 ```
 
 **跟进：**递归解很简单，你能迭代地做吗?
@@ -30,12 +30,12 @@ class Solution:
     
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         
-        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right) if root else []
+        return [root.val] + self.inorderTraversal(root.left) + self.inorderTraversal(root.right) if root else []
 ```
 
 ### 迭代法
 
-迭代法的基本思路就是：如果当前节点存在，就将其存在栈中，并左寻用其左节点替代当前节点；如果当前节点不存在，则用栈顶节点替代当前的节点，并存储它的 value 添加到返回值中，添加完之后，用其右节点迭代这个节点。
+迭代法的基本思路就是：如果当前节点存在，就存储它的 value 添加到返回值中，并将其存在栈中，然后左寻用其左节点替代当前节点；如果当前节点不存在，则用栈顶节点替代当前的节点，并用其右节点迭代这个节点。
 
 ## 答案
 
@@ -50,13 +50,13 @@ class Solution:
 class Solution:
     
     # 递归法
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
         
         def helper(root, res):
         
             if not root: return res
-            helper(root.left, res)
             res.append(root.val)
+            helper(root.left, res)
             helper(root.right, res)
             return res
         
@@ -66,16 +66,17 @@ class Solution:
     
     
     # 迭代法
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def preorderTraversal(self, root: TreeNode) -> List[int]:
         
         stack, res = [], []
         while root or stack:
             if root:
+                res.append(root.val)
                 stack.append(root)
                 root = root.left
             else:
                 root = stack.pop()
-                res.append(root.val)
                 root = root.right
+            
         return res
 ```
